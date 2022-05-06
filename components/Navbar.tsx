@@ -1,9 +1,16 @@
+import Link from "next/link";
+
 export default function Navbar(): JSX.Element {
   return (
     <>
       <div className="w-screen h-20 fixed top-0 left-0 flex flex-row justify-start items-center">
         <div className="w-screen h-20 flex flex-row items-center justify-start p-16">
-          <p className="text-5xl">LOGO</p>
+          <Link href="/">
+            <img
+              src="/logo_dark.png"
+              className="w-[160px] h-[160px] p-3 cursor-pointer"
+            />
+          </Link>
         </div>
         <div className="w-screen h-20 flex flex-row items-center justify-evenly p-16 font-['Raleway']">
           <li
